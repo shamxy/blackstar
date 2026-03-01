@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Cool Shirt",
+    "price": "$25",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "name": "Awesome Hat",
+    "price": "$15",
+    "image": "https://via.placeholder.com/150"
+  }
+]
