@@ -1,34 +1,57 @@
-[
-  {
-    "id": 1,
-    "name": "Merino Wool Cashmere Sweater",
-    "category": "Knitwear",
-    "price": 395,
-    "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    "description": "Luxuriously soft blend of merino wool and cashmere."
-  },
-  {
-    "id": 2,
-    "name": "Italian Leather Oxford Shoes",
-    "category": "Footwear",
-    "price": 595,
-    "image": "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    "description": "Handcrafted in Italy from the finest full-grain leather."
-  },
-  {
-    "id": 3,
-    "name": "Signature Silk Scarf",
-    "category": "Accessories",
-    "price": 245,
-    "image": "https://images.unsplash.com/photo-1584030373081-f37b7a3e6983?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    "description": "Hand-rolled edges on 100% mulberry silk."
-  },
-  {
-    "id": 4,
-    "name": "Premium Leather Tote",
-    "category": "Bags",
-    "price": 895,
-    "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    "description": "Full-grain leather tote with gold-toned hardware."
-  }
-]
+// Product Data
+const products = [
+    {
+        id: 1,
+        name: "Merino Wool Cashmere Sweater",
+        category: "Knitwear",
+        price: 395,
+        oldPrice: null, // Optional: for sale items
+        inStock: true,
+        rating: 4.8,
+        reviews: 124,
+        image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        hoverImage: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80", // Could be different angle
+        description: "Luxuriously soft blend of merino wool and cashmere, perfect for elegant layering.",
+        details: [
+            "70% Merino Wool, 30% Cashmere",
+            "Dry clean only",
+            "Made in Italy"
+        ],
+        colors: ["Charcoal", "Navy", "Cream"],
+        sizes: ["XS", "S", "M", "L", "XL"]
+    },
+    // ... rest of products with similar structure
+];
+
+// Categories Data with slugs for routing
+const categories = [
+    {
+        id: 1,
+        name: "Women's Collection",
+        slug: "womens-collection",
+        count: 124,
+        image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        featured: true
+    },
+    {
+        id: 2,
+        name: "Men's Collection",
+        slug: "mens-collection",
+        count: 98,
+        image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        featured: true
+    },
+    {
+        id: 3,
+        name: "Accessories",
+        slug: "accessories",
+        count: 67,
+        image: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        featured: true
+    }
+];
+
+// Export for use in other files (if using modules)
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { products, categories };
+}
