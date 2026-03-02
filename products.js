@@ -1,3 +1,4 @@
+// Product Data
 const products = [
     {
         id: 1,
@@ -65,6 +66,7 @@ const products = [
     }
 ];
 
+// Categories Data
 const categories = [
     {
         name: "Women's Collection",
