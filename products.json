@@ -3,12 +3,12 @@
     "id": 1,
     "name": "Cool Shirt",
     "price": "$25",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=300&q=80"
   },
   {
     "id": 2,
     "name": "Awesome Hat",
     "price": "$15",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=300&q=80"
   }
 ]
