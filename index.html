@@ -1,24 +1,103 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Boys Like Ghana</title>
-<link rel="stylesheet" href="style.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE | Premium E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div style="background: #f4f4f4; padding: 20px; border-bottom: 2px solid #000;">
-  <h2>Your Cart</h2>
-  <ul id="cart-list">
-    <li>Cart is empty</li>
-  </ul>
-    <hr>
-<button onclick="alert('Redirecting to Stripe... (Replace this with a real Stripe link later)')" 
-        style="background: green; color: white; padding: 10px; width: 100%; cursor: pointer;">
-  Proceed to Checkout
-</button>
-</div>
-  <h1>My Store</h1>
-  <div id="product-list"></div>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>FREE SHIPPING ON ORDERS OVER $500 | 30-DAY RETURNS</p>
+    </div>
 
-<script src="script.js"></script>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="menu-icon">☰</div>
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="logo">
+                <h1>LUXE</h1>
+            </div>
+            
+            <div class="nav-right">
+                <div class="search-icon">🔍</div>
+                <div class="account-icon">👤</div>
+                <div class="cart-icon" id="cartIcon">
+                    🛒
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">NEW COLLECTION</span>
+            <h1 class="hero-title">Timeless Elegance</h1>
+            <p class="hero-description">Discover our curated selection of premium products designed for the discerning individual.</p>
+            <button class="hero-btn">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Curated Collections</h2>
+            <div class="category-grid" id="categoryGrid"></div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid" id="productsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2>Join the Luxe Circle</h2>
+            <p>Subscribe to receive exclusive offers, early access to new collections, and styling inspiration.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="closeCart">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="product.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
