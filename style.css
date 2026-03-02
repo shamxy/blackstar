@@ -1,0 +1,16 @@
+body { font-family: 'Helvetica', sans-serif; max-width: 800px; margin: auto; padding: 20px; background: #f9f9f9; }
+
+h1 { text-align: center; color: #333; }
+
+#product-list { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+.product-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+
+.product-card img { max-width: 100%; border-radius: 4px; }
+
+button { background: #007bff; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; width: 100%; }
+
+button:hover { background: #0056b3; }
+
+#cart-container { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #ddd; }
+
